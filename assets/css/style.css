@@ -3,10 +3,10 @@
 
 @media (min-width: 400px) {
         .direction{
-            height: 6rem;
+            height: 5rem;
         }
         .caracter{
-            height: 6rem;
+            height: 5rem;
         }
 }
 @media (min-width: 700px) {
