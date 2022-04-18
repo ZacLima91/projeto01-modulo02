@@ -1,22 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-@media (min-width: 200px) {
-        .direction{
-            height: 5rem;
-        }
-        .caracter{
-            height: 5rem;
-        }
-}
-@media (min-width: 600px) {
-    .direction{
-        height: 10rem;
-    }
-    .caracter{
-        height: 10rem;
-    }
-}
 *{
     margin: 0;
     padding: 0;
@@ -65,6 +49,13 @@ main{
     justify-content: center;
     padding: 3rem;
     
+}
+.direction{
+    width: 10%;
+}
+
+.caracter{
+    width: 20%;
 }
 
 button{
