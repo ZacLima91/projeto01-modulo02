@@ -62,6 +62,7 @@ const buttonDiv = document.querySelector("#button");
 const tela = document.querySelector("body");
 let contDirection = 0;
 
+
 right.addEventListener("click", function () {
   contDirection++;
   switch (contDirection) {
@@ -111,17 +112,17 @@ let cont = 0;
 let contLVL = 0;
 
 function evoluir() {
+  tela.style.backgroundSize = ' 100% 150%';
   cont++;
   switch (idDigimon.id) {
     case "koromon":
       switch (cont) {
         case 1:
-          if (window.matchMedia("(max-width:500px)").matches) {
+          if (window.matchMedia("(min-width:300px)").matches) {
             tela.style.backgroundImage = "url(assets/images/koromon-agumon-and.gif)";
-            tela.style.backgroundSize = 'cover'
+            tela.style.backgroundSize = ' 100% 700%';
           } else if(window.matchMedia("(min-width:700px)").matches) {
             tela.style.backgroundImage = "url(assets/images/koromon-agumon.gif)";
-            tela.style.backgroundSize = 'cover'
           }
           
           
@@ -136,6 +137,7 @@ function evoluir() {
               "src",
               `assets/images/${digimons[0][1].digimon}.png`
             );
+            tela.style.backgroundSize = ' 100% 150%';
             descriptionDigimon.textContent = digimons[0][1].descrition;
             buttonDiv.style.display = "flex";
             button.textContent = "EVOLUIR";
@@ -143,9 +145,9 @@ function evoluir() {
 
           break;
         case 2:
-          if (window.matchMedia("(max-width:500px)").matches) {
+          if (window.matchMedia("(min-width:300px)").matches) {
             tela.style.backgroundImage = "url(assets/images/agumon-greymon-and.gif)";
-            tela.style.backgroundSize = 'cover'
+            tela.style.backgroundSize = ' 100% 700%';
           } else if(window.matchMedia("(min-width:700px)").matches) {
             tela.style.backgroundImage = "url(assets/images/agumon-greymon.gif)";
             tela.style.backgroundSize = 'cover'
@@ -161,6 +163,7 @@ function evoluir() {
               "src",
               `assets/images/${digimons[0][2].digimon}.png`
             );
+            tela.style.backgroundSize = ' 100% 150%';
             descriptionDigimon.textContent = digimons[0][2].descrition;
             buttonDiv.style.display = "flex";
             button.textContent = "INICIAL";
@@ -183,9 +186,9 @@ function evoluir() {
     case "tokomon":
       switch (cont) {
         case 1:
-          if (window.matchMedia("(max-width:500px)").matches) {
+          if (window.matchMedia("(min-width:300px)").matches) {
             tela.style.backgroundImage = "url(assets/images/tokomon-patamon-and.gif)";
-            tela.style.backgroundSize = 'cover'
+            tela.style.backgroundSize = ' 100% 700%';
           } else if(window.matchMedia("(min-width:700px)").matches) {
             tela.style.backgroundImage = "url(assets/images/tokomon-patamon.gif)";
             tela.style.backgroundSize = 'cover'
@@ -201,15 +204,15 @@ function evoluir() {
               "src",
               `assets/images/${digimons[1][1].digimon}.png`
             );
+            tela.style.backgroundSize = ' 100% 150%';
             descriptionDigimon.textContent = digimons[1][1].descrition;
             buttonDiv.style.display = "flex";
             button.textContent = "EVOLUIR";
           }, 5000);
           break;
         case 2:
-          if (window.matchMedia("(max-width:500px)").matches) {
-            tela.style.backgroundImage = "url(assets/images/patamon-angemon-and.gif)";
-            tela.style.backgroundSize = 'cover'
+          if (window.matchMedia("(min-width:300px)").matches) {
+            tela.style.backgroundImage = "url(assets/images/patamon-angemon-and.gif)";tela.style.backgroundSize = ' 100% 700%';
           } else if(window.matchMedia("(min-width:700px)").matches) {
             tela.style.backgroundImage = "url(assets/images/patamon-angemon.gif)";
             tela.style.backgroundSize = 'cover'
@@ -225,6 +228,7 @@ function evoluir() {
               "src",
               `assets/images/${digimons[1][2].digimon}.png`
             );
+            tela.style.backgroundSize = ' 100% 150%';
             descriptionDigimon.textContent = digimons[1][2].descrition;
             buttonDiv.style.display = "flex";
             button.textContent = "INICIAL";
@@ -246,12 +250,11 @@ function evoluir() {
     case "tsunomon":
       switch (cont) {
         case 1:
-          if (window.matchMedia("(max-width:500px)").matches) {
+          if (window.matchMedia("(min-width:300px)").matches) {
             tela.style.backgroundImage = "url(assets/images/tsunomon-gabumon-and.gif)";
-            tela.style.backgroundSize = 'cover'
+            tela.style.backgroundSize = ' 100% 600%';
           } else if(window.matchMedia("(min-width:700px)").matches) {
             tela.style.backgroundImage = "url(assets/images/tsunomon-gabumon.gif)";
-            tela.style.backgroundSize = 'cover'
           }
           descriptionDigimon.textContent = "";
           left.setAttribute("src", "");
@@ -264,18 +267,18 @@ function evoluir() {
               "src",
               `assets/images/${digimons[2][1].digimon}.png`
             );
+            tela.style.backgroundSize = ' 100% 150%';
             descriptionDigimon.textContent = digimons[2][1].descrition;
             buttonDiv.style.display = "flex";
             button.textContent = "EVOLUIR";
           }, 2600);
           break;
         case 2:
-          if (window.matchMedia("(max-width:500px)").matches) {
+          if (window.matchMedia("(min-width:300px)").matches) {
             tela.style.backgroundImage = "url(assets/images/gabumon-garurumon-and.gif)";
-            tela.style.backgroundSize = 'cover'
+            tela.style.backgroundSize = ' 100% 700%';
           } else if(window.matchMedia("(min-width:700px)").matches) {
             tela.style.backgroundImage = "url(assets/images/gabumon-garurumon.gif)";
-            tela.style.backgroundSize = 'cover'
           }
           descriptionDigimon.textContent = "";
           left.setAttribute("src", "");
@@ -288,6 +291,7 @@ function evoluir() {
               "src",
               `assets/images/${digimons[2][2].digimon}.png`
             );
+            tela.style.backgroundSize = ' 100% 150%';
             descriptionDigimon.textContent = digimons[2][2].descrition;
             buttonDiv.style.display = "flex";
             button.textContent = "INICIAL";
