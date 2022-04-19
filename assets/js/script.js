@@ -112,7 +112,6 @@ let cont = 0;
 let contLVL = 0;
 
 function evoluir() {
-  tela.style.backgroundSize = ' 100% 150%';
   cont++;
   switch (idDigimon.id) {
     case "koromon":
